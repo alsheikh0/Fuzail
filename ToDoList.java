@@ -16,6 +16,7 @@ public class ToDoList {
     public void removeTask(int index){
         if(index >= 0 && index < tasks.size()){
             tasks.remove(index);
+            
         } else{
             System.out.println("Invalid Task number. ");
         }
@@ -34,7 +35,8 @@ public class ToDoList {
             System.out.println("No tasks in your to-do list");
         } else {
             for(int i=0; i<tasks.size(); i++){
-                System.out.println((i+1)+". "+ tasks.get(i));
+                
+                System.out.println("Task "+i+" "+tasks.get(i).getDescription());
             }
         }
     }
